@@ -1,0 +1,31 @@
+# Node
+
+node_modules
+npm-debug.log
+package-lock.json
+
+# WebStorm
+
+.idea
+
+# Visual Studio Code
+
+.vscode
+
+# Sublime Text
+
+*.sublime-project
+
+*.sublime-workspace
+
+# SASS
+
+.sass-cache
+
+# Logs
+
+*.log
+
+# env
+
+.env
