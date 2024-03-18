@@ -1,13 +1,14 @@
 import { Sequelize, Model, DataTypes } from 'sequelize';
 import sequelize from './index';
 
-const subjects = sequelize.define('subjects', {
+const room = sequelize.define('room', {
     id: DataTypes.INTEGER,
-    name: DataTypes.STRING
+    number: DataTypes.INTEGER,
+    capacity: DataTypes.INTEGER
 });
 
 (async () => {
     await sequelize.sync({force: true})
 })();
 
-export default subjects;
+export default room;

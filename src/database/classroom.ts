@@ -1,14 +1,14 @@
-const { Sequelize, Model, Datatypes } = require('sequelize');
-const sequelize = require('./index');
+import { Sequelize, Model, DataTypes } from 'sequelize';
+import sequelize from './index';
 
 const classroom = sequelize.define('classroom', {
-    id: Datatypes.INTEGER,
-    series: Datatypes.STRING,
-    year: Datatypes.INTEGER
+    id: DataTypes.INTEGER,
+    series: DataTypes.STRING,
+    year: DataTypes.INTEGER
 });
 
 (async () => {
     await sequelize.sync({force: true})
 })();
 
-module.exports = classroom;
+export default classroom;
